@@ -50,7 +50,7 @@ def to_base64(input_text):
         if i == 62:
             final_chars.append(chr(i - 19))
         if i == 63:
-            final_chars.append(chr(i - 15))
+            final_chars.append(chr(i - 16))
     if padding_to_add:
         return "".join(final_chars) + padding_to_add
     else:
