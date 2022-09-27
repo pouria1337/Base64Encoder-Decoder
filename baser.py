@@ -42,13 +42,13 @@ def to_base64(input_text):
     for i in numbers:
         if i <= 25:
             final_chars.append(chr(i + 65))
-        if i > 25 and i <= 51:
+        elif i <= 51:
             final_chars.append(chr(i + 71))
-        if i > 51 and i <= 61:
+        elif i <= 61:
             final_chars.append(chr(i - 4))
-        if i == 62:
+        elif i == 62:
             final_chars.append(chr(i - 19))
-        if i == 63:
+        elif i == 63:
             final_chars.append(chr(i - 16))
     if padding_to_add:
         return "".join(final_chars) + padding_to_add
