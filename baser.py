@@ -1,5 +1,4 @@
 def convert_tobin(input_string):
-    #input_string = "".join(input_string.split())
     binary_list = [bin(ord(x)) for x in input_string]
     corrected = []
     for binary in binary_list:
@@ -14,14 +13,14 @@ def convert_to6(bin_string):
         new_bin.append(bin_string[start:end])
         start = end
         end += 6
-    #print(new_bin)
+    #debug
     incomplete_binary = 0
     if len(new_bin[-1]) != 6:
         zero_to_add = 6 - len(new_bin[-1])
         incomplete_binary = new_bin[-1]
         new_bin.pop()
         new_bin.append(incomplete_binary + ("0"*zero_to_add))
-    #print(new_bin)
+    #debig
     return new_bin
 
 def padding(thisinput):
@@ -38,7 +37,7 @@ def to_base64(input_text):
     binary_string = convert_tobin(input_text)
     padding_to_add = padding(input_text)
     numbers = [int(x, 2) for x in convert_to6(binary_string)]
-    #print(numbers)
+    #debug
     final_chars = []
     for i in numbers:
         if i <= 25:
