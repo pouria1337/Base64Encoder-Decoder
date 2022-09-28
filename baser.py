@@ -33,7 +33,7 @@ def padding(thisinput):
         counter += 1
     return "=" * counter
 
-def to_base64(input_text):
+def base64_encode(input_text):
     binary_string = convert_tobin(input_text)
     padding_to_add = padding(input_text)
     numbers = [int(x, 2) for x in convert_to6(binary_string)]
@@ -54,3 +54,9 @@ def to_base64(input_text):
         return "".join(final_chars) + padding_to_add
     else:
         return "".join(final_chars)
+
+def main():
+    user_input = input("Enter text to encode: ")
+    print(base64_encode(user_input))
+
+main()

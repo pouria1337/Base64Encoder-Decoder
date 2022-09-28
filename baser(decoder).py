@@ -76,3 +76,9 @@ def base64_decoder(input_text):
     complete_6bits = make_six(detransform)
     byte_form = segment_to_byte(complete_6bits)
     return to_ascii(byte_form)
+
+def main():
+    user_input = input("Enter encoded text: ")
+    print(base64_decoder(user_input))
+
+main()
