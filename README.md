@@ -3,10 +3,11 @@ An implementation of Base64 binary-to-text encoding & decoding protocol written 
 
 # Usage
 Simply download either .py file and type in your shell program of choice:
-_python encoder.py
+
+*python encoder.py*
 
 OR
 
-_python3 encoder.py
+*python3 encoder.py*
 
 A prompt asking you to enter an ascii text to be encoded or an encoded text to be decoded is then displayed. simply type/copy the desired text and press "Enter". An output is then displayed in the shell program.
