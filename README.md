@@ -1,5 +1,5 @@
 # Base64Encoder/Decoder
-An implementation of Base64 binary-to-text encoding & decoding protocol written in Python and C++. As opposed to the built-in python module "base64", my script runs faster both in encoding and decoding text. 
+An implementation of Base64 binary-to-text encoding & decoding protocol written in Python. As opposed to the built-in python module "base64", my script runs faster both in encoding and decoding text. 
 
 # Usage
 Simply download either .py file and type in your shell program of choice:
